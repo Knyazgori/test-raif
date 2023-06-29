@@ -1,0 +1,96 @@
+@import "src/styles/variables";
+
+.drop-list-container {
+  position: relative;
+  width: 100%;
+}
+.input-container {
+  position: relative;
+  width: 100%;
+}
+.drop-list-base {
+  input {
+    background: url("./input.svg") no-repeat center right 8px $white !important;
+    border: 0;
+    width: 100%;
+    color: $black;
+    height: 40px;
+    border-bottom: 1px solid $gray;
+    border-radius: 0;
+  }
+
+  input:focus {
+    box-shadow: none;
+    border-bottom: solid 2px #2B2D33;
+  }
+
+  ul {
+    box-shadow: none;
+    border: 1px solid $light-gray-disable;
+    padding: 9px 0;
+    
+    button {
+      padding: 9px 16px;
+    }
+
+    button:hover {
+      background-color: $light-gray-disable;
+    }
+  }
+}
+.input-arrow-container {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-label {
+  position: absolute;
+  top: -16px;
+  color: $light-gray;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.dropdown-option {
+  height: 40px;
+  border-bottom: 1px solid $black;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  cursor: pointer;
+  background-color: $white;
+}
+
+.dropdown-option:hover {
+  background-color: #f4f4f4;
+}
+
+.dropdown-container {
+  display: none;
+  border: 1px solid $black;
+  border-bottom: none;
+  position: absolute;
+  width: 100%;
+}
+
+.dropdown-container__visible {
+  display: block;
+}
+
+.drop-list-stateactive {
+  border-color: $gray !important;
+}
+
+.drop-list-state_error {
+  input {
+    border-color: $red-error;
+  }
+}
+
+// <ul id="gw4i0HNr_Mk23sLy9xTYf" aria-expanded="true" role="listbox" class="react-dadata__suggestions">
+//   <button role="option" aria-selected="false" class="react-dadata__suggestion">
+//     <span aria-label="Алтайский край">
+//       <span aria-hidden="true">Алтайский край </span></span></button><button role="option" aria-selected="false" class="react-dadata__suggestion"><span aria-label="Ханты-Мансийский Автономный округ - Югра"><span aria-hidden="true">Ханты-Мансийский Автономный округ - Югра</span></span></button><button role="option" aria-selected="false" class="react-dadata__suggestion"><span aria-label="Архангельская обл"><span aria-hidden="true">Архангельская обл</span></span></button></ul>

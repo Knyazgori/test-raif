@@ -1,0 +1,39 @@
+@import "src/styles/variables";
+
+.button-base {
+  border: 0;
+  padding: 0;
+  color: $black;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.button-size_s {
+  width: 60px;
+  height: 30px;
+}
+
+.button-size_m {
+  width: 90px;
+  height: 35px;
+}
+
+.button-size_l {
+  width: 120px;
+  height: 45px;
+}
+
+.button-state_active {
+  background-color: $yellow;
+}
+
+.button-state_active:hover {
+  background-color: $yellow-hover;
+}
+
+.button-state_disable {
+  background-color: $light-gray-disable;
+  cursor: auto;
+}

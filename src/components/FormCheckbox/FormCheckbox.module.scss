@@ -1,0 +1,21 @@
+@import "src/styles/variables";
+
+.checkbox-base {
+  &__disable {
+    display: none;
+  }
+}
+
+.checkbox-base + .checkbox-checkmark {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+  border: 2px solid $gray;
+  background-color: transparent;
+}
+
+.checkbox-base:checked + .checkbox-checkmark {
+  background: no-repeat center url("./shape.svg") $yellow;
+  border-color: $yellow;
+}

@@ -1,0 +1,49 @@
+@import "src/styles/variables";
+
+.input-container {
+  position: relative;
+}
+
+.input-label {
+  position: absolute;
+  top: -16px;
+  color: $light-gray;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.input-base {
+  color: $black;
+  height: 40px;
+  padding: 0 2px;
+  border-bottom: 1px solid $gray;
+}
+
+.input-size_s {
+  width: 150px;
+}
+
+.input-size_m {
+  width: 175px;
+}
+
+.input-size_l {
+  width: 200px;
+}
+
+.input-size_max {
+  width: 100%;
+}
+
+.input-state_active {
+  border-color: $gray;
+}
+
+.input-state_error {
+  border-color: $red-error;
+}
+
+.input-state_select {
+  border-bottom: 1px solid $gray;
+}

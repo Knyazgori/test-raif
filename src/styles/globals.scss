@@ -1,0 +1,42 @@
+@import "src/styles/variables";
+
+@font-face {
+  font-family: "ALS Hauss Book";
+  src: url("../../public/fonts/ALSHauss-Book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ALS Hauss Book";
+  src: url("../../public/fonts/ALSHauss-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+#raiff-demo-artw {
+  background-color: $bgc;
+  font-family: "ALS Hauss Book", "Arial";
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  button,
+  input,
+  textarea {
+    font-family: "ALS Hauss Book", "Arial";
+    outline: none;
+    resize: none;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

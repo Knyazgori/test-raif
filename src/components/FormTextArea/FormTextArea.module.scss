@@ -1,0 +1,20 @@
+@import "src/styles/variables";
+
+.textarea-base {
+  color: $black;
+  border: 1px solid $gray;
+  border-style: none solid solid solid;
+}
+
+.textarea-container {
+  position: relative;
+}
+
+.textarea-label {
+  position: absolute;
+  top: -16px;
+  color: $light-gray;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+}

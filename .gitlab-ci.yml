@@ -1,0 +1,10 @@
+stages:
+  - deploy
+
+trigger_deploy_symfony:
+  stage: deploy
+  script:
+    - "curl -X POST -F token=d6a136bbc5213c4b681f32968d9e03 -F ref=master https://gitlab.artw.ru/api/v4/projects/566/trigger/pipeline 1>/dev/null"
+  when: on_success
+  only:
+    - master

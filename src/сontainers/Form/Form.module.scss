@@ -1,0 +1,76 @@
+@import "src/styles/variables";
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e1e1e3;
+  justify-content: space-between;
+  min-height: 230px;
+  padding: 50px 45px 30px;
+
+  @media (min-width: $screen-tablet) {
+    padding-bottom: 45px;
+  }
+}
+
+.form-agreement {
+  margin-top: 20px;
+  span {
+    line-height: 22px;
+    font-size: 14px;
+
+    @media (min-width: $screen-tablet) {
+      font-size: 16px;
+      margin: 0;
+    }
+  }
+
+  @media (min-width: $screen-tablet) {
+    margin: 0;
+  }
+}
+
+.form-agreement_link {
+  color: $link;
+  cursor: pointer;
+}
+
+.form-buttons_prev {
+  margin-right: 10px;
+}
+
+.form-buttons-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $screen-tablet) {
+    margin: 0;
+  }
+}
+
+.form-burron-right {
+  margin-left: auto;
+}
+
+.form-footer {
+  display: flex;
+  margin-top: auto;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $screen-phone) {
+    flex-direction: row;
+  }
+}
+
+.form-error-text {
+  margin: 0;
+  margin: 5px 0 10px;
+  font-weight: 400;
+  font-size: 12px;
+  color: $red-error;
+  &__margin {
+    margin-top: 0;
+  }
+}

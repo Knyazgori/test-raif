@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Raiff</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Пример работы формы</h1>
+      <div
+        id="raiff-demo-artw"
+        style="min-height: 320px; min-width: 100%"
+      ></div>
+      <h2>
+        Для подключения формы на свой сайт, вставьте html код указанный ниже:
+      </h2>
+      <pre>
+&lt;script defer="defer" src="<%= process.env.REACT_APP_API_URL %>/dist/static/js/main.js"&gt;&lt;/script&gt;
+&lt;link href="<%= process.env.REACT_APP_API_URL %>/dist/static/css/main.css" rel="stylesheet"&gt;
+&lt;div id="raiff-demo-artw" style="min-height: 320px;"&gt;&lt;/div&gt;</pre
+      >
+    </div>
+  </body>
+</html>

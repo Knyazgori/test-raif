@@ -1,0 +1,10 @@
+{
+  "why_choose": "Порекомендовали коллеги",
+  "phone": "9112223344",
+  "address": "СПб, Невский проспект 1",
+  "is_main_bank": true,
+  "main_bank_why": "Получаю зарплату на карту, здесь планируются основные доходы и расходы",
+  "is_investment": false,
+  "investment_prefer": "Акции, облигации",
+  "is_investment_plan": false
+}
